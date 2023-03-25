@@ -1,0 +1,97 @@
+:root {
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img{
+    min-width: 100%;
+}
+
+html {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100%;
+    Font-size: 14px;
+    overflow: hidden;
+}
+
+body{
+    padding:0;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;;
+}
+
+main{
+display: flex;;
+flex-direction: column;
+gap:1em;
+}
+.icon-container{
+    background-color: var(--Dark-Blue);
+    padding:2em 3.5em;;
+    border-top-right-radius:40%;
+}
+
+.icon-svg{
+    margin: 1.5em 0;
+}
+
+
+.logo-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-section .document,
+.folder,
+.upload{
+    background-color:var(--Very-Dark-Blue);
+    margin-right:1em;
+    padding:.7em;
+    border-radius:10px;
+}
+
+
+
+.storage-container{
+    background-color: var(--Dark-Blue);
+    padding:1.5em 2em;;;
+}
+
+.storage-container .used{
+    color:var(--Grayish-Blue)
+}
+
+.used .light-clr{
+    color: var(--Pale-Blue);
+}
+
+.progress-bar{
+    background-color:var(--Very-Dark-Blue);
+    border-radius: 15px;;
+}
+
+.skill{
+    background-color: red;
+    border-radius: 15px;;
+    display:inline-block;
+    width: 50%;
+}
